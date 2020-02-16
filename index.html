@@ -21,18 +21,37 @@
 	<body class="is-preload">
 
 		<!-- Header -->
-			<header id="header">
-				<img style="opacity:0.3" width="275px" src="images/icon-white.png"/>
+			<header id="header" >
+				<img style="margin-top: 100px; opacity:0.3" width="275px" src="images/icon-white.png"/>
 				<h1>Bold Voices</h1>
 				<p>Sign up for our newsletter and stay in the know about our upcoming workshops.<br/>
 				We'll send you free information about sexual harassment in the workplace and how to combat it.</p>
 			</header>
 
 		<!-- Signup Form -->
-			<form id="signup-form" method="post" action="#">
+			<!-- <form id="signup-form" method="post" action="https://formspree.io/xgekjwjv">
+				<input type="name" name="name" id="name" placeholder="Name" />
 				<input type="email" name="email" id="email" placeholder="Email Address" />
+				<input type="message" name="message" id="message" placeholder="What is one question that you've wanted to ask/get answered about gender equality?" />
+				<input type="submit" value="Sign Up" />
+			</form> -->
+
+			<form id="contactForm" method="POST" action="https://formspree.io/xgekjwjv">
+				<div class="form-group">
+					<input class="form-control" id="name" type="text" name="name" placeholder="Name *" required="required">
+					<p class="help-block text-danger"></p>
+				</div>
+				<div class="form-group">
+					<input class="form-control" id="email" type="email" name="_replyto" placeholder="Email Address *" required="required">
+					<p class="help-block text-danger"></p>
+				</div>
+				<div class="form-group">
+					<textarea style="height:100px" class="form-control" id="message" name="message" placeholder="What is one question that you've wanted to ask/get answered about gender equality? *" required="required"></textarea>
+					<p class="help-block text-danger"></p>
+				</div>
 				<input type="submit" value="Sign Up" />
 			</form>
+
 		<!-- Footer -->
 			<footer id="footer" style="margin-top:50px;">
 				<ul class="icons">
